@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  db:
+    image: mongo:latest
+    container_name: mongo_db
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+      MONGO_INITDB_DATABASE: todo_db
+    ports:
+      - "27017:27017"
+
+  api:
+    build: .
+    container_name: todo_api
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      DB_URI: mongodb://admin:admin@db:27017/todo_db?authSource=admin
+      PORT: 5000
+
+  frontend:
+    build: ./frontend
+    container_name: todo_frontend
+    ports:
+      - "19000:19000"
+      - "19001:19001"
+      - "19002:19002"
+    depends_on:
+      - api

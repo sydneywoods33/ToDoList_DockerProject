@@ -1,0 +1,16 @@
+## setup backend dependencies
+
+1. navigate to backend directory
+2. create a package.json file 
+3. install express - used to create the server
+4. install CORS - used to allow cross origin requests
+5. install mongodb - MongoDB client for Node.js
+6. install dotenv - used to load environment variables from a .env file
+
+## summary 
+cd /c:/CPSY300G/DPToDoList/backend
+npm init -y
+npm install express
+npm install cors
+npm install mongodb
+npm install dotenv
