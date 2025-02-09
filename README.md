@@ -1,4 +1,10 @@
-# DP ToDo List
+# DP ToDo List Application
+
+## Overview
+The **DP ToDo List Application** is a full-stack to-do list app built with **React Native** for the frontend and **Node.js with Express** for the backend. It utilizes **MongoDB** for data storage. The app allows users to **create, view, update, and delete tasks**, with the backend managing API requests and database interactions.
+
+---
+
 
 ## Project Structure
 /DPTODOLIST
@@ -31,5 +37,12 @@
 
 
 
-## ToDo List - Application Summary
-The DP ToDo List application is a full-stack to-do list app built with React Native for the frontend and Node.js with Express for the backend. It uses MongoDB for data storage. The frontend allows users to view, create, update, and delete tasks, while the backend handles API requests and database interactions.
+
+---
+
+## Features
+- **Task Management**: Add, edit, delete, and view tasks.
+- **Persistent Storage**: MongoDB is used to store tasks.
+- **API Integration**: Backend built with Express.js provides RESTful endpoints.
+- **Cross-Platform Support**: React Native frontend works on both Android and iOS.
+- **Containerization**: Docker support for easy deployment.
