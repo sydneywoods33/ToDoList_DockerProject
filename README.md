@@ -5,38 +5,32 @@ The **DP ToDo List Application** is a full-stack to-do list app built with **Rea
 
 ---
 
-
 ## Project Structure
-/DPTODOLIST
-├── /frontend 
-│   ├── /src 
-│   │   ├── /components 
-│   │   │   └── TaskItem.js  (Task item component)
-|   |   |
-│   │   ├── /screens 
-│   │   │   └── HomeScreen.js (Main screen)
-|   |   |
-│   │   ├── /api
-│   │   │   └── api.js (API functions)
-|   |   |
-│   │   ├── App.js (App entry point)
-│   │   └── index.js (Main index file)
-│   ├── package.json (Frontend dependencies)
-|
-├── /backend 
-│   ├── db.js (MongoDB connection)
-│   ├── index.js (Backend entry point)
-│   ├── routes.js (API routes)
-│   ├── package.json (Backend dependencies)
-│   ├── .env (Backend environment variables)
-│  
-├── docker-compose.yml (Docker Compose config)
-├── Dockerfile (Docker build file)
-├── requirments.txt (installation + dependancies)
-└── README.md  (Project documentation)
 
+### Frontend (React Native)
+- **src/**
+  - **components/**
+    - `TaskItem.js` – Task item component  
+  - **screens/**
+    - `HomeScreen.js` – Main screen  
+  - **api/**
+    - `api.js` – API request handlers  
+  - `App.js` – App entry point  
+  - `index.js` – Main index file  
+- `package.json` – Frontend dependencies  
 
+### Backend (Node.js & Express)
+- `db.js` – MongoDB connection  
+- `index.js` – Backend entry point  
+- `routes.js` – API routes  
+- `package.json` – Backend dependencies  
+- `.env` – Backend environment variables  
 
+### Deployment & Configuration Files
+- `docker-compose.yml` – Docker Compose configuration  
+- `Dockerfile` – Docker build file  
+- `requirements.txt` – Installation dependencies  
+- `README.md` – Project documentation  
 
 ---
 
